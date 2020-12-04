@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcome button {
+    background-color: #621ba2;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 5px;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+table {
+}
+
+td {
+    border: #999 1px solid;
+    width: 20px;
+    height: 20px;
+    background-color: #999;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+}
+
+
+td > .cell {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    /*color: #999;*/
+}
+
+td > .cell.clear {
+    background-color: #fff;
+    color: green;
+}
+
+td > .cell.exploded {
+    background-color: red;
+    color: #999;
+}
+
+table.exploded, table.exploded td {
+    background-color: red;
+}
